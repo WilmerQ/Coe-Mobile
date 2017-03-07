@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Coe Movil</string>
+    <string name="activity_registro">Coe Movil</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registro">Registro</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_borrar_activity">Map</string>
+    <string name="title_activity_mapa_equipo">Equipo de trabajo</string>
+    <string name="title_activity_enviar_alerta_manual">Reporte de Emergencia</string>
+    <string name="title_activity_ver_alertas">VerAlertas</string>
+</resources>

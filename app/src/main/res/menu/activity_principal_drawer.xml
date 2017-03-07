@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/miequipo_principal"
+            android:icon="@drawable/common_google_signin_btn_icon_dark_disabled"
+            android:title="Mi Equipo" />
+
+        <item
+            android:id="@+id/verAlertas"
+            android:icon="@mipmap/ic_alertasver"
+            android:title="Alertas Reportadas" />
+
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/salir"
+                android:icon="@drawable/ic_salir"
+                android:title="Salir" />
+
+        </menu>
+    </item>
+
+</menu>

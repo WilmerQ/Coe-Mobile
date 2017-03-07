@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_enviar_alerta_manual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/dimension_simple"
+    android:paddingRight="@dimen/dimension_simple"
+    android:paddingTop="@dimen/dimension_simple"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.edu.ucc.coemovil.EnviarAlertaManual"
+    tools:showIn="@layout/app_bar_enviar_alerta_manual">
+
+    <ScrollView
+        android:id="@+id/enviaralerta_form"
+        android:layout_width="match_parent"
+        android:layout_height="432dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="ingrese su nombre "
+                    android:textColor="@color/Dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
+
+                <EditText
+                    android:id="@+id/editTextNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColorLink="?android:attr/actionMenuTextColor" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif"
+                    android:text="Nivel de Alerta:   "
+                    android:textColor="@color/Dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif"
+                    android:text="Celular: "
+                    android:textColor="@color/Dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
+
+                <EditText
+                    android:id="@+id/editTextNota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <co.edu.ucc.coemovil.FrameLayoutFixed
+                    android:id="@+id/record_panel"
+                    android:layout_width="286dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="0.81"
+                    android:background="#ffffff"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/slideText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagen_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/slidearrow" />
+
+                        <TextView
+                            android:id="@+id/slideToCancelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            android:textColor="#999999"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="#ffffffff"
+                        android:orientation="horizontal"
+                        android:paddingLeft="13dp">
+
+                        <ImageView
+                            android:id="@+id/rec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_brightness_1_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/recording_time_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            android:text="00:00"
+                            android:textColor="#4d4c4b"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </co.edu.ucc.coemovil.FrameLayoutFixed>
+
+                <ImageButton
+                    android:id="@+id/chat_audio_send_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:paddingRight="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/mic_button_states" />
+
+
+                <ImageButton
+                    android:id="@+id/buttonFoto"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:paddingRight="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+                <ImageButton
+                    android:id="@+id/buttonVideo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:paddingRight="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_icon_videocamera" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <VideoView
+                    android:layout_width="match_parent"
+                    android:id="@+id/videoView"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonEnviarAlerta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Enviar"
+                android:textStyle="normal|bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragmentVerMapa1"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinnerListaEquiposTrabajo" />
+
+    </LinearLayout>
+</LinearLayout>

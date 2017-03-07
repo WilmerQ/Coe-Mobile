@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "165426901560",
+    "project_id": "coemovil"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165426901560:android:4c28d9bcc6426e04",
+        "android_client_info": {
+          "package_name": "co.edu.ucc.coemovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165426901560-d9g0g0707fp1v9e0u9v75vte1e58pcl4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.edu.ucc.coemovil",
+            "certificate_hash": "693F0E79DF264690CB20D74727899ACA4617A27F"
+          }
+        },
+        {
+          "client_id": "165426901560-ct66egh6cajsjvtasncmms39epqef4vs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6LjtQdIdeA8l0pExtdvg5zJEKBddnJC0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/registro_loguin"
+            android:icon="@drawable/ic_registrar"
+            android:title="Registro" />
+
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/salir"
+                android:icon="@drawable/ic_salir"
+                android:title="Salir" />
+
+        </menu>
+    </item>
+
+
+</menu>
